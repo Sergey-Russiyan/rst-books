@@ -1,0 +1,7 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"Books API Testing","CRUD Operations for Books","Read Operations","0","0","0","0","2"
+"Books API Testing","CRUD Operations for Books","Error Handling","2","0","0","0","2"
+"Books API Testing","CRUD Operations for Books","Delete Operations","0","1","0","0","0"
+"Books API Testing","CRUD Operations for Books","Create Operations","0","1","0","0","0"
+"Books API Testing","CRUD Operations for Books","Data-Driven Testing","0","0","0","0","1"
+"Books API Testing","CRUD Operations for Books","Update Operations","0","0","0","0","1"

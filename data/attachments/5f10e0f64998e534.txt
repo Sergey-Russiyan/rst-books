@@ -1,0 +1,1 @@
+{"id":0,"name":"Microservices Patterns","author":"Chris Richardson","publication":"O'Reilly Media","category":"Programming","pages":466,"price":27.71}

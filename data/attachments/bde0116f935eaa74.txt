@@ -1,0 +1,1 @@
+{"id":0,"name":"Refactoring: 51deb901-ed4d-42ba-8f92-000d6d3eb619","author":"Martin Fowler","publication":"Addison-Wesley Professional","category":"Programming","pages":448,"price":35.5}
