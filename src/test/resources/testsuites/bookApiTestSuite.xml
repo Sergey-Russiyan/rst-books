@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Books API Test Suite" verbose="2" parallel="false" thread-count="1">
+    <parameter name="baseUrl" value="http://77.102.250.113:17354/api/v1"/>
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+<!--        <listener class-name="com.api.listeners.AllureToTestNgListener"/>-->
+    </listeners>
+
+    <test name="Books API CRUD Operations">
+        <classes>
+            <class name="com.api.tests.BooksApiTest">
+                <methods>
+                    <include name="testGetAllBooks"/>
+                    <include name="testGetBookById"/>
+                    <include name="testCreateBook"/>
+                    <include name="testUpdateBook"/>
+                    <include name="testDeleteBook"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Books API Error Handling">
+        <classes>
+            <class name="com.api.tests.BooksApiTest">
+                <methods>
+                    <include name="testGetNonExistentBook"/>
+                    <include name="testCreateBookWithInvalidData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Books API Authentication">
+        <classes>
+            <class name="com.api.tests.BooksApiTest">
+                <methods>
+                    <include name="testUnauthorizedAccess"/>
+                    <include name="testInvalidCredentials"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Books API Data Driven Tests">
+        <classes>
+            <class name="com.api.tests.BooksApiTest">
+                <methods>
+                    <include name="testCreateMultipleBooks"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
