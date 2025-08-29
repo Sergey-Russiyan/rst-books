@@ -129,20 +129,14 @@
                 </configuration>
             </plugin>
 
-            <!-- Allure Maven Plugin -->
             <plugin>
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-maven</artifactId>
                 <version>${allure-maven.version}</version>
                 <configuration>
                     <reportVersion>${allure.version}</reportVersion>
+                    <resultsDirectory>${allure.results.directory}</resultsDirectory>
                 </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>io.qameta.allure</groupId>
-                <artifactId>allure-maven</artifactId>
-                <version>${allure-maven.version}</version>
                 <executions>
                     <execution>
                         <id>allure-report</id>
@@ -160,7 +154,6 @@
     <profiles>
         <profile>
             <id>api-tests</id>
-            <!-- Only activates when you need this profile -->
         </profile>
     </profiles>
 
