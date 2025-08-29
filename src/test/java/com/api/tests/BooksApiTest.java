@@ -22,8 +22,6 @@ import static org.testng.Assert.*;
 @Feature("CRUD Operations for Books")
 public class BooksApiTest extends BaseTest {
 
-    private static final int BOOK_CREATION_TIMEOUT_MS = 7000;
-    private static final int BOOK_DELETION_TIMEOUT_MS = 6000;
     private static final int NON_EXISTENT_ID = 999999;
 
     @BeforeClass
@@ -42,7 +40,7 @@ public class BooksApiTest extends BaseTest {
     }
 
     // ---------- Read ----------
-    @Test(priority = 1, enabled = false)
+    @Test(priority = 1)
     @TmsLink("CSP-0001")
     @Story("Read Operations")
     @Description("Retrieve all books")
@@ -59,7 +57,7 @@ public class BooksApiTest extends BaseTest {
         }
     }
 
-    @Test(priority = 2, enabled = false)
+    @Test(priority = 2)
     @TmsLink("CSP-0002")
     @Story("Read Operations")
     @Description("Retrieve a specific book by ID")
@@ -83,7 +81,7 @@ public class BooksApiTest extends BaseTest {
     }
 
     // ---------- Create ----------
-    @Test(priority = 3, timeOut = BOOK_CREATION_TIMEOUT_MS)
+    @Test(priority = 3)
     @TmsLink("CSP-0003")
     @Story("Create Operations")
     @Description("Create a new book")
@@ -108,7 +106,7 @@ public class BooksApiTest extends BaseTest {
     }
 
     // ---------- Update ----------
-    @Test(priority = 4, enabled = false)
+    @Test(priority = 4)
     @TmsLink("CSP-0004")
     @Story("Update Operations")
     @Description("Update an existing book (self-sufficient)")
@@ -136,7 +134,7 @@ public class BooksApiTest extends BaseTest {
     }
 
     // ---------- Delete ----------
-    @Test(priority = 5, timeOut = BOOK_DELETION_TIMEOUT_MS)
+    @Test(priority = 5)
     @TmsLink("CSP-0005")
     @Story("Delete Operations")
     @Description("Delete a book (self-sufficient)")
@@ -154,7 +152,7 @@ public class BooksApiTest extends BaseTest {
     }
 
     // ---------- Negative Cases ----------
-    @Test(priority = 6, enabled = false)
+    @Test(priority = 6)
     @TmsLink("CSP-0006")
     @Story("Error Handling")
     @Description("Get non-existent book")
@@ -197,7 +195,7 @@ public class BooksApiTest extends BaseTest {
         response.then().statusCode(404);
     }
 
-    @Test(priority = 9, enabled = false)
+    @Test(priority = 9)
     @TmsLink("CSP-0009")
     @Story("Error Handling")
     @Description("Create book with invalid data")
@@ -219,7 +217,7 @@ public class BooksApiTest extends BaseTest {
         };
     }
 
-    @Test(dataProvider = "bookData", priority = 10, enabled = false)
+    @Test(dataProvider = "bookData", priority = 10)
     @TmsLink("CSP-0010")
     @Story("Data-Driven Testing")
     @Description("Create multiple books with different data sets")
