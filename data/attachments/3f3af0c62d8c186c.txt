@@ -1,0 +1,1 @@
+{"id":0,"name":"Design Patterns","author":"Gang of Four","publication":"Addison-Wesley","category":"Programming","pages":395,"price":45.0}

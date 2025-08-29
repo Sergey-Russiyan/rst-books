@@ -1,0 +1,1 @@
+{"id":0,"name":"Building Microservices","author":"Sam Newman","publication":"Packt Publishing","category":"Programming","pages":531,"price":56.1}
