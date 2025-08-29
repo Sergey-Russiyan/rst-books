@@ -1,0 +1,1 @@
+{"id":0,"name":"null - Updated","author":null,"publication":null,"category":null,"pages":10,"price":5.0}

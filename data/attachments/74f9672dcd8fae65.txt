@@ -1,0 +1,1 @@
+{"id":0,"name":"","author":"","publication":"","category":"","pages":-1,"price":-10.5}

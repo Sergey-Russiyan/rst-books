@@ -1,0 +1,1 @@
+{"id":0,"name":"Effective Java","author":"Joshua Bloch","publication":"Addison-Wesley","category":"Programming","pages":462,"price":27.06}

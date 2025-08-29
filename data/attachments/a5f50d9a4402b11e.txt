@@ -1,0 +1,1 @@
+{"id":0,"name":"The Pragmatic Programmer","author":"David Thomas","publication":"Addison-Wesley","category":"Programming","pages":352,"price":42.95}
