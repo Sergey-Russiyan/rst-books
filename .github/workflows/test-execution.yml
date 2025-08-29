@@ -36,10 +36,12 @@ jobs:
         run: mvn -B -DskipTests clean package
 
       - name: Run Book API Test Suite
-        run: mvn test -DsuiteXmlFile=testSuites/bookApiTestSuite.xml \
-          -Dapi.username=${{ secrets.API_USERNAME }} \
-          -Dapi.password=${{ secrets.API_PASSWORD }} \
-          -Dsurefire.testFailureIgnore=true
+        run: |
+          mvn test \
+            -DsuiteXmlFile=testSuites/bookApiTestSuite.xml \
+            -Dapi.username=${{ secrets.API_USERNAME }} \
+            -Dapi.password=${{ secrets.API_PASSWORD }} \
+            -Dsurefire.testFailureIgnore=true
 
       - name: Generate Allure Report
         run: |
